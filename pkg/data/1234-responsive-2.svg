@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" enable-background="new 0 0 400 400">
+    <defs>
+        <style>
+            /* Hide all shapes */
+            .shape {
+                display: none;
+            }
+
+            /* Mobile */
+            .shape.one {
+                display: block;
+            }
+
+            /* Tablet */
+            @media (min-width: 768px) {
+                .shape.one {
+                    display: none;
+                }
+
+                .shape.two {
+                    display: block;
+                }
+            }
+
+            /* Desktop */
+            @media (min-width: 980px) {
+                .shape.two {
+                    display: none;
+                }
+
+                .shape.three {
+                    display: block;
+                }
+            }
+        </style>
+    </defs>
+    <g id="bg">
+        <rect fill="#DBDBDB" width="400" height="400"/>
+    </g>
+    <g class="shape three">
+        <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/>
+    </g>
+    <g class="shape two">
+        <rect x="89" y="148.9" fill="#FF1D17" width="102.2" height="102.2"/>
+        <rect x="208.8" y="148.9" fill="#FF1D17" width="102.2" height="102.2"/>
+    </g>
+    <g class="shape one">
+        <circle fill="#FFEF45" cx="200" cy="200" r="51.1"/>
+    </g>
+</svg>
+
